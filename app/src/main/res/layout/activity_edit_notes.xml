@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="5dp"
+    android:id="@+id/backroigh"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.EditNotes">
+
+    <EditText
+        android:padding="5dp"
+        android:id="@+id/Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/removebaseline"
+        android:cursorVisible="true"
+        android:hint="Title"
+        android:inputType="textAutoCorrect|textNoSuggestions|textEnableTextConversionSuggestions|textCapSentences|textAutoComplete|textImeMultiLine"
+        android:textSize="30sp"
+         />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/Note"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/removebaseline"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="start"
+            android:hint="Note"
+            android:inputType="textMultiLine|textNoSuggestions|textEnableTextConversionSuggestions|textCapSentences|textAutoComplete"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:onClick="color"
+                android:id="@+id/color"
+                android:layout_width="55dp"
+                android:layout_height="46dp"
+                android:background="#30ffffff"
+                android:src="@drawable/baseline_color_lens_24"/>
+            <LinearLayout
+                android:id="@+id/colorpicker"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                >
+                <ImageView
+                    android:onClick="colors"
+                    android:layout_margin="5dp"
+                    android:background="@color/appcolor"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+                <ImageView
+                    android:onClick="colors"
+                    android:layout_margin="5dp"
+                    android:background="#F1B6B6"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+                <ImageView
+                    android:onClick="colors"
+                    android:layout_margin="5dp"
+                    android:background="#96D9EA"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+                <ImageView
+                    android:onClick="colors"
+                    android:layout_margin="5dp"
+                    android:background="#A8F180"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+                <ImageView
+                    android:onClick="colors"
+                    android:layout_margin="5dp"
+                    android:background="@color/black"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+
+                <ImageView
+                    android:onClick="colors"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/white" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</LinearLayout>
